@@ -47,6 +47,7 @@
             border-radius: 1.5rem;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid rgba(0, 0, 0, 0.04);
+            cursor: default;
         }
 
         .company-card:hover {
@@ -223,37 +224,34 @@
                 </div>
             </div>
 
-            <!-- Partner Companies Grid - 3 cards in a row -->
+            <!-- Partner Companies Grid - 3 cards in a row (no links) -->
             <div class="px-5 pb-4 pt-1">
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
 
-                    <!-- Beforward -->
-                    <a href="https://www.beforward.jp" target="_blank" rel="noopener"
-                        class="company-card company-card-beforward p-3 flex flex-col items-center justify-center group">
+                    <!-- Beforward - image only -->
+                    <div class="company-card company-card-beforward p-3 flex flex-col items-center justify-center">
                         <div class="partner-logo-container" style="height: 90px;">
                             <img src="./logo.svg" alt="Beforward" style="width:200px;height:auto;max-height:80px;" />
                         </div>
                         <span class="partner-label">Beforward</span>
-                    </a>
+                    </div>
 
-                    <!-- Automax -->
-                    <a href="https://www.automaxspace.com/" target="_blank" rel="noopener"
-                        class="company-card company-card-automax p-3 flex flex-col items-center justify-center group">
+                    <!-- Automax - image only -->
+                    <div class="company-card company-card-automax p-3 flex flex-col items-center justify-center">
                         <div class="partner-logo-container" style="height: 90px;">
                             <img src="https://automax.atomcards.co.tz/logo/logo.png" alt="Automax"
                                 style="max-height:80px;width:auto;" />
                         </div>
                         <span class="partner-label">Automax</span>
-                    </a>
+                    </div>
 
-                    <!-- Partner 3 -->
-                    <a href="https://woodlands.co.ke" target="_blank" rel="noopener"
-                        class="company-card company-card-partner3 p-3 flex flex-col items-center justify-center group">
+                    <!-- Partner 3 - image only -->
+                    <div class="company-card company-card-partner3 p-3 flex flex-col items-center justify-center">
                         <div class="partner-logo-container" style="height: 90px;">
                             <img src="./logo2.png" alt="Partner 3" style="max-height:80px;width:auto;" />
                         </div>
                         <span class="partner-label">Partner 3</span>
-                    </a>
+                    </div>
                 </div>
 
                 <!-- AXE GLOBAL Website (full width) -->
