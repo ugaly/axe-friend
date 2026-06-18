@@ -71,6 +71,14 @@
             background: #c8c9cc;
         }
 
+        .company-card-partner3 {
+            background: #dedfe2;
+        }
+
+        .company-card-partner3:hover {
+            background: #d0d1d5;
+        }
+
         .logo-hero {
             background: linear-gradient(145deg, #02040a 0%, #0a1428 50%, #02040a 100%);
             box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.03), 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -123,6 +131,7 @@
             border-color: rgba(239, 131, 0, 0.15);
         }
 
+        /* Social Icons with Brand Colors */
         .social-icon {
             width: 48px;
             height: 48px;
@@ -131,23 +140,43 @@
             align-items: center;
             justify-content: center;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            background: #f0f1f3;
-            color: #6b7280;
             border: 1px solid rgba(0, 0, 0, 0.04);
             text-decoration: none;
-        }
-
-        .social-icon:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 24px -8px rgba(239, 131, 0, 0.25);
-            background: white;
-            color: #ef8300;
-            border-color: rgba(239, 131, 0, 0.2);
         }
 
         .social-icon svg {
             width: 22px;
             height: 22px;
+        }
+
+        .social-icon-instagram {
+            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white;
+        }
+
+        .social-icon-instagram:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 24px -8px rgba(225, 48, 108, 0.4);
+        }
+
+        .social-icon-facebook {
+            background: #1877f2;
+            color: white;
+        }
+
+        .social-icon-facebook:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 24px -8px rgba(24, 119, 242, 0.4);
+        }
+
+        .social-icon-x {
+            background: #000000;
+            color: white;
+        }
+
+        .social-icon-x:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.3);
         }
 
         /* Remove text labels for partner cards */
@@ -194,32 +223,43 @@
                 </div>
             </div>
 
-            <!-- Partner Companies Grid -->
+            <!-- Partner Companies Grid - 3 cards in a row -->
             <div class="px-5 pb-4 pt-1">
-                <div class="grid grid-cols-2 gap-3">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
 
-                    <!-- Beforward - larger logo, lighter gray -->
+                    <!-- Beforward -->
                     <a href="https://www.beforward.jp" target="_blank" rel="noopener"
                         class="company-card company-card-beforward p-3 flex flex-col items-center justify-center group">
-                        <div class="partner-logo-container" style="height: 110px;">
-                            <img src="./logo.svg" alt="Beforward" style="width:320px;height:auto;max-height:100px;" />
+                        <div class="partner-logo-container" style="height: 90px;">
+                            <img src="./logo.svg" alt="Beforward" style="width:200px;height:auto;max-height:80px;" />
                         </div>
                         <span class="partner-label">Beforward</span>
                     </a>
 
-                    <!-- Automax - darker gray, with words visible in logo -->
+                    <!-- Automax -->
                     <a href="https://www.automaxspace.com/" target="_blank" rel="noopener"
                         class="company-card company-card-automax p-3 flex flex-col items-center justify-center group">
                         <div class="partner-logo-container" style="height: 90px;">
                             <img src="https://automax.atomcards.co.tz/logo/logo.png" alt="Automax"
-                                style="max-height:120px;width:auto;" />
+                                style="max-height:80px;width:auto;" />
                         </div>
                         <span class="partner-label">Automax</span>
                     </a>
 
-                    <!-- AXE GLOBAL Website (full width) -->
+                    <!-- Partner 3 -->
+                    <a href="#" target="_blank" rel="noopener"
+                        class="company-card company-card-partner3 p-3 flex flex-col items-center justify-center group">
+                        <div class="partner-logo-container" style="height: 90px;">
+                            <img src="./logo2.png" alt="Partner 3" style="max-height:80px;width:auto;" />
+                        </div>
+                        <span class="partner-label">Partner 3</span>
+                    </a>
+                </div>
+
+                <!-- AXE GLOBAL Website (full width) -->
+                <div class="mt-3">
                     <a href="https://www.axeglobalsarlu.com" target="_blank" rel="noopener"
-                        class="col-span-2 website-card p-4 flex items-center justify-between group">
+                        class="website-card p-4 flex items-center justify-between group">
                         <div class="flex items-center gap-4">
                             <div
                                 class="w-12 h-12 rounded-xl orange-bg flex items-center justify-center text-white shadow-md">
@@ -238,23 +278,23 @@
             </div>
 
             <!-- Social Media Section -->
-            <div class="px-6 pb-4 pt-1">
+            <div class="px-6 pb-4 pt-3">
                 <div class="flex items-center justify-center gap-4">
                     <span class="text-xs font-medium uppercase tracking-[0.15em] text-gray-400">Follow Us</span>
                     <span class="h-px w-12 divider-gradient"></span>
                 </div>
                 <div class="flex items-center justify-center gap-3 mt-3">
-                    <!-- Instagram -->
-                    <a href="#" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <!-- Instagram - Brand Color -->
+                    <a href="#" target="_blank" rel="noopener" class="social-icon social-icon-instagram" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                     </a>
-                    <!-- Facebook -->
-                    <a href="#" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    <!-- Facebook - Brand Color -->
+                    <a href="#" target="_blank" rel="noopener" class="social-icon social-icon-facebook" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                     </a>
-                    <!-- X (Twitter) -->
-                    <a href="#" target="_blank" rel="noopener" class="social-icon" aria-label="X">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    <!-- X (Twitter) - Brand Color -->
+                    <a href="#" target="_blank" rel="noopener" class="social-icon social-icon-x" aria-label="X">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
                     </a>
                 </div>
             </div>
