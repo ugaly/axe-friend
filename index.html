@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +10,9 @@
     <!-- Professional CDN Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body {
@@ -18,40 +21,65 @@
             background: linear-gradient(145deg, #f7f8fa 0%, #eef0f3 100%);
             min-height: 100vh;
         }
+
         .font-display {
             font-family: 'Playfair Display', 'Times New Roman', serif;
             font-weight: 700;
         }
+
         .orange-bg {
             background: linear-gradient(135deg, #ef8300 0%, #f59e42 100%);
         }
+
         .orange-text {
             color: #ef8300;
         }
+
         .orange-border {
             border-color: #ef8300;
         }
+
         .orange-shadow {
             box-shadow: 0 20px 60px -20px rgba(239, 131, 0, 0.3), 0 8px 30px -8px rgba(0, 0, 0, 0.08);
         }
+
         .company-card {
-            background: white;
             border-radius: 1.5rem;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid rgba(0, 0, 0, 0.04);
         }
+
         .company-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 20px 40px -12px rgba(239, 131, 0, 0.15);
             border-color: rgba(239, 131, 0, 0.15);
         }
+
+        .company-card-beforward {
+            background: #e8e9ec;
+        }
+
+        .company-card-beforward:hover {
+            background: #dcdde0;
+        }
+
+        .company-card-automax {
+            background: #d5d6d9;
+        }
+
+        .company-card-automax:hover {
+            background: #c8c9cc;
+        }
+
         .logo-hero {
             background: linear-gradient(145deg, #02040a 0%, #0a1428 50%, #02040a 100%);
             box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.03), 0 8px 32px rgba(0, 0, 0, 0.3);
         }
+
         .accent-stripe {
             background: linear-gradient(135deg, #ef8300 0%, #fbbf7a 100%);
         }
+
         .partner-logo-container {
             height: 80px;
             display: flex;
@@ -59,39 +87,49 @@
             justify-content: center;
             padding: 12px;
         }
+
         .partner-logo-container img {
             max-height: 100%;
             width: auto;
             max-width: 100%;
             object-fit: contain;
-            filter: grayscale(0%) brightness(1);
             transition: all 0.3s ease;
         }
+
         .partner-logo-container img:hover {
-            filter: grayscale(0%) brightness(1.05);
             transform: scale(1.02);
         }
+
         .divider-gradient {
             background: linear-gradient(90deg, transparent, rgba(239, 131, 0, 0.15), transparent);
         }
+
         .badge-orange {
             background-color: rgba(239, 131, 0, 0.08);
             border-color: rgba(239, 131, 0, 0.25);
             color: #ef8300;
         }
+
         .website-card {
             background: linear-gradient(135deg, #ffffff 0%, #fcfcfd 100%);
             border-radius: 1.5rem;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid rgba(0, 0, 0, 0.04);
         }
+
         .website-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 20px 40px -12px rgba(239, 131, 0, 0.15);
             border-color: rgba(239, 131, 0, 0.15);
         }
+
+        /* Remove text labels for partner cards */
+        .partner-label {
+            display: none;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="mx-auto w-full max-w-2xl px-4 py-8 sm:py-12">
@@ -106,10 +144,13 @@
             <div class="px-6 pt-6">
                 <div class="relative w-full overflow-hidden rounded-2xl logo-hero" style="aspect-ratio: 4/2.5;">
                     <!-- Dotted overlay -->
-                    <div aria-hidden="true" class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+                    <div aria-hidden="true" class="absolute inset-0 opacity-10"
+                        style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 24px 24px;">
+                    </div>
                     <!-- Logo -->
                     <div class="absolute inset-0 flex items-center justify-center p-4">
-                        <img src="./log.png" alt="AXE GLOBAL logo" class="h-[75%] w-[75%] max-h-[85%] max-w-[85%] object-contain drop-shadow-2xl" />
+                        <img src="./log.png" alt="AXE GLOBAL logo"
+                            class="h-[85%] w-[85%] max-h-[92%] max-w-[92%] object-contain drop-shadow-2xl" />
                     </div>
                 </div>
             </div>
@@ -130,34 +171,41 @@
             <div class="px-5 pb-4 pt-1">
                 <div class="grid grid-cols-2 gap-3">
 
-                    <!-- Beforward -->
-                    <a href="https://www.beforward.jp" target="_blank" rel="noopener" class="company-card p-3 flex flex-col items-center justify-center group">
-                        <div class="partner-logo-container">
-                            <img src="./logo.svg" alt="Beforward" class="max-h-12" />
+                    <!-- Beforward - larger logo, lighter gray -->
+                    <a href="https://www.beforward.jp" target="_blank" rel="noopener"
+                        class="company-card company-card-beforward p-3 flex flex-col items-center justify-center group">
+                        <div class="partner-logo-container" style="height: 110px;">
+                            <img src="./logo.svg" alt="Beforward" style="width:320px;height:auto;max-height:100px;" />
                         </div>
-                        <span class="mt-1 text-[10px] font-medium text-gray-400 uppercase tracking-wider group-hover:text-orange-500 transition-colors">Beforward</span>
+                        <span class="partner-label">Beforward</span>
                     </a>
 
-                    <!-- Automax -->
-                    <a href="#" target="_blank" rel="noopener" class="company-card p-3 flex flex-col items-center justify-center group">
-                        <div class="partner-logo-container">
-                            <img src="https://automax.atomcards.co.tz/logo/logo.png" alt="Automax" class="max-h-12" />
+                    <!-- Automax - darker gray, with words visible in logo -->
+                    <a href="#" target="_blank" rel="noopener"
+                        class="company-card company-card-automax p-3 flex flex-col items-center justify-center group">
+                        <div class="partner-logo-container" style="height: 90px;">
+                            <img src="https://automax.atomcards.co.tz/logo/logo.png" alt="Automax" style="max-height:120px;width:auto;" />
                         </div>
-                        <span class="mt-1 text-[10px] font-medium text-gray-400 uppercase tracking-wider group-hover:text-orange-500 transition-colors">Automax</span>
+                        <span class="partner-label">Automax</span>
                     </a>
 
                     <!-- AXE GLOBAL Website (full width) -->
-                    <a href="https://www.axeglobalsarlu.com" target="_blank" rel="noopener" class="col-span-2 website-card p-4 flex items-center justify-between group">
+                    <a href="https://www.axeglobalsarlu.com" target="_blank" rel="noopener"
+                        class="col-span-2 website-card p-4 flex items-center justify-between group">
                         <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-xl orange-bg flex items-center justify-center text-white shadow-md">
-                                <i data-lucide="globe" class="h-5 w-5"></i>
+                            <div
+                                class="w-12 h-12 rounded-xl orange-bg flex items-center justify-center text-white shadow-md">
+                                <i data-lucide="globe" class="h-6 w-6"></i>
                             </div>
                             <div>
-                                <p class="text-sm font-semibold text-gray-800 group-hover:text-orange-500 transition-colors">www.axeglobalsarlu.com</p>
+                                <p
+                                    class="text-sm font-semibold text-gray-800 group-hover:text-orange-500 transition-colors">
+                                    www.axeglobalsarlu.com</p>
                                 <p class="text-[11px] text-gray-400 font-medium">Official Website</p>
                             </div>
                         </div>
-                        <i data-lucide="arrow-up-right" class="h-5 w-5 text-gray-300 group-hover:text-orange-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"></i>
+                        <i data-lucide="arrow-up-right"
+                            class="h-5 w-5 text-gray-300 group-hover:text-orange-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"></i>
                     </a>
                 </div>
             </div>
@@ -185,4 +233,5 @@
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
+
 </html>
